@@ -1,0 +1,39 @@
+
+.inputWrapper {
+
+  background-color: yellow;
+
+
+.inputNav {
+  margin: 0px auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+
+  .search {
+
+    border: none;
+    padding: 11px;
+}  
+
+.find {
+  padding: 0.8rem;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+} 
+
+.logo {
+  height: 4rem;
+  position: relative;
+  right: 70px;
+}
+
+}
+
+}
