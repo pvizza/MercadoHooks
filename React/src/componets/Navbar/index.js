@@ -1,6 +1,7 @@
 import React from "react"
 import './style.scss'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar({handleCallback, Buttonback}) {
   
@@ -16,10 +17,15 @@ function handleClick(e) {
     
     Buttonback()
     
+  }
 
   }
-  
-}
+
+ function handleSearch() {
+
+  Buttonback()
+
+ } 
 
  return (
 
@@ -31,7 +37,7 @@ function handleClick(e) {
     <div className='inputNav'>
     <img className='logo' src='https://static.mlstatic.com/org-img/homesnw/img/ml-logo-small.png?v=3.0'/>
     <input  placeholder="Buscar productos,marcas y mas.." className='find' type="text" onKeyDown={(e) => handleClick(e)} onChange={handleChange}/>
-    <button className='search' onClick={handleClick} > Buscar </button>
+    <a ><FontAwesomeIcon className='svgIcon' onClick={handleSearch} icon={faSearch} /></a>
     </div>
   
 
