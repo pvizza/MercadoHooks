@@ -5,6 +5,7 @@ import Navbar from '../../componets/Navbar'
 
 
 
+
 class Product extends React.Component {
   constructor(props) {
     super(props)
@@ -20,8 +21,8 @@ class Product extends React.Component {
       description: '',
       attributes: [],
       mouse:false,
-      search: '',
-      input:''
+      ser: [],
+      inputValue:''
     
     };
 
@@ -34,13 +35,14 @@ class Product extends React.Component {
   async componentDidMount() {
 
     const { id } = this.props.match.params
+    
+    
 
     const data = await fetch(`https://api.mercadolibre.com/items/${id}`);
     const info = await fetch(`https://api.mercadolibre.com/items/${id}/description`)
     const Json = await info.json();
     const json = await data.json();
-
-
+    
 
     this.setState({
       title: json.title,
@@ -51,8 +53,8 @@ class Product extends React.Component {
       condition: json.condition,
       available_quantity: json.available_quantity,
       description: Json.plain_text,
-      attributes: json.attributes
-
+      attributes: json.attributes,
+      
 
     })
 
@@ -90,20 +92,23 @@ class Product extends React.Component {
   }
 
     handleCallback(call) {
-  
+    
 
     this.setState({
+    
 
-      input: call
-
-    })
+      inputValue: call
+}
+    )
   }
   
-    handleButton(input) {
-      console.log('hola',input)
-    this.setState({
-      search: input
-    })
+    handleButton() {
+
+      const {inputValue} = this.state
+    
+    
+      
+    
   
   }
 
@@ -119,7 +124,7 @@ class Product extends React.Component {
     return (
       <>
 
-        <Navbar handleCallback={(call) =>  this.handleCallback(call)} Buttonback={(e) => this.handleButton(e)} />
+        <Navbar handleCallback={(call) =>  this.handleCallback(call)} Buttonback={() => this.handleButton()} />
 
         <div className='itemMain'>
           <div className='itemWrapper'>
@@ -132,7 +137,7 @@ class Product extends React.Component {
 
                     return (
 
-                      <div onMouseOver={() => this.handleOver()} className='gpic' key={key}>
+                      <div key={key} onMouseOver={() => this.handleOver()} className='gpic'>
 
                         {<img className='pic' src={pic.url} />}
 
@@ -151,9 +156,9 @@ class Product extends React.Component {
                     return (
 
                       <>
-
-                     {<img className='maxPic' key={key} src={pic.url} />}
-
+                    <div key={key}>
+                     {<img className='maxPic'  src={pic.url} />}
+                     </div>   
                       </>
 
                     )
@@ -185,11 +190,17 @@ class Product extends React.Component {
 
               <h3>Caracteristicas principales</h3>
               <table className='atr'>
-                {attr.map((atr, key) => {
+                {attr.map((atr) => {
                   return (
-                    <>
-                      <tr key={key} className='tr'> <th className='th' ><span >{atr.name}</span></th>  <td className='td'> <span>{atr.value_name}</span> </td> </tr>
-                    </>
+                    
+                    
+                    <tbody key={atr.id}>
+                    
+                      <tr className='tr'><th className='th' ><span >{atr.name}</span></th><td className='td'><span>{atr.value_name}</span></td></tr>
+                      </tbody>
+                     
+                    
+                    
 
                   )
                 })}

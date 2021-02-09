@@ -47,6 +47,7 @@ function handleClick() {
 
 function handleCallback(call) {
   setInputValue(call)
+  
 }
 
 function handleButton () {
