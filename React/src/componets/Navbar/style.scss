@@ -10,7 +10,9 @@
   display: flex;
   align-items: center;
   padding: 1rem;
-
+  @media screen and (max-width:900px) {
+    width: 100%;
+  }
 .svgIcon {
 
   font-size: 20px;
@@ -37,12 +39,21 @@
   font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
   font-size: 14px;
   font-weight: 400;
+
+  @media screen and (max-width:500px) {
+    width: 80%;
+    border-radius: 10px;
+  }
 } 
 
 .logo {
   height: 4rem;
   position: relative;
   right: 70px;
+
+ @media screen and (max-width:750px) {
+   display:none
+ } 
 }
 
 }

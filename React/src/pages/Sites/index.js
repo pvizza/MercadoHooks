@@ -37,12 +37,12 @@ function Sites() {
 
 
 
-function handleClick() {
-  setModal(!modal)
+// function handleClick() {
+//   setModal(!modal)
   
   
   
-}    
+// }    
     
 
 function handleCallback(call) {
@@ -65,7 +65,7 @@ function handleButton () {
 
 
     <div className='main'>
-     <div className='tagsProduct'>
+     {/* <div className='tagsProduct'>
       <h2>Producto</h2>
       <h3>Ordenar publicaciones</h3>
       { !modal ? 
@@ -77,7 +77,7 @@ function handleButton () {
       <h3>Ubicacion</h3>
       
 
-      </div> 
+      </div>  */}
  
     <div className='productWrapper'>
     

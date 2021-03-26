@@ -2,6 +2,7 @@ import React from 'react'
 import './style.scss'
 import ReactMarkdown from 'react-markdown'
 import Navbar from '../../componets/Navbar'
+import axios from 'axios'
 
 
 
@@ -59,6 +60,33 @@ class Product extends React.Component {
     })
 
   }
+
+  async clickBuy(title,price) {
+   
+    
+
+    try {
+      
+      const ax = await axios({
+        method:"POST",
+        headers:{
+          'Content-type': 'application/json', 
+        },
+        url:"http://localhost:4000/checkout",
+  
+        data: {
+          title:title,
+          price:price,
+          quantity: 1
+        }
+        
+      });
+    } catch(err) {
+      console.log(err)
+      
+    }
+   
+    }
 
 
   Click(title, price, poc) {
@@ -180,7 +208,7 @@ class Product extends React.Component {
                 <p className='itemCuote' >stock disponible</p>
                 <p className='itemCuote'>Cantidad:({available_quantity} disponibles)</p>
 
-                <button className='buy Button'>Comprar ahora</button>
+                <button className='buy Button' onClick={() => this.clickBuy(title,price)} >Comprar ahora</button>
                 <button onClick={() => this.Click(title, price, poc)} className='cart Button'>Agregar al carrito</button>
               </div>
             </div>

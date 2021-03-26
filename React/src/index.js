@@ -13,7 +13,7 @@ import {BrowserRouter as Router,Route} from 'react-router-dom';
 ReactDOM.render(
   <Router>
     
-    <Route exact path='/' component={Home} />
+    <Route exact path='/mercadoHooks' component={Home} />
     <Route exact path='/Sites/:site' component={Sites} />
     <Route exact path='/product/:id' component={Product} />
     <Route exact path='/cart/' component={Cart} />

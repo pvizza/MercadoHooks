@@ -1,6 +1,6 @@
 .product {
 
-  width: 80%;
+  width: 50%;
   background-color: white;
   border: solid;
   padding:20px 64px 37px 34px;
@@ -9,6 +9,18 @@
   align-items: center;
   flex-direction: row-reverse;
   border: solid 1px #eaeaea;
+
+  @media screen and (min-width:900px) and (max-width:1500px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width:640px) and (max-width:900px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width:640px) {
+    width: 100%;
+  }
 
 
 .info {

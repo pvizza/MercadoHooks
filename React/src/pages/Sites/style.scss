@@ -7,18 +7,24 @@
   padding-top:4rem;
   padding-bottom: 4rem;
 
+ @media screen and (max-width: 850px)  {
+
+    justify-content: center;
+
+ }
+
 
 .tagsProduct {
 
   width: 20%;
   padding-left: 2rem;
 
+  @media screen and (max-width: 850px)  {
 
-.modal {
+    display: none;
 
+ }
 
-
-}
 
 .prime {
 
@@ -34,7 +40,14 @@
 .productWrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
+  justify-content: center;
+
+  @media screen and (max-width: 850px)  {
+
+    width: 100%;
+    justify-content: space-around;
+ }
   
  
 }
