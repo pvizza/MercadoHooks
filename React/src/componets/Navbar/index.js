@@ -31,9 +31,6 @@ function handleClick(e) {
 
     <>
     <div className='inputWrapper'>
-      <div>
-        
-      </div>
     <div className='inputNav'>
     <img className='logo' src='https://static.mlstatic.com/org-img/homesnw/img/ml-logo-small.png?v=3.0'/>
     <input  placeholder="Buscar productos,marcas y mas.." className='find' type="text" onKeyDown={(e) => handleClick(e)} onChange={handleChange}/>
