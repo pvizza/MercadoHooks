@@ -200,16 +200,27 @@ class Product extends React.Component {
 
               </div>
               <div className='itemInf'>
+                <div>
                 <p className='condition'> {condition} | {sold} vendidos </p>
                 <p className='itemTitle'>{title}</p>
+                {poc.map((pic,key)=> {
+                  return ( <div key={key} className='imgRes'>
+                  <img className="minRes" src={pic.url} />
+                                </div>
+                  )
+                })}
+                </div>
+              <div>
                 <p className='itemPrice'>$  {price}</p>
                 <p className='itemCuote'>Paga hasta en 12 cuotas de ${Math.round(price / 12)}</p>
-                {price <= 2499 ? <p> Costo de envio </p> : <p className='itemSend'>Envio gratis</p>}
+                {price <= 3499 ? <p> Costo de envio </p> : <p className='itemSend'>Envio gratis</p>}
                 <p className='itemCuote' >stock disponible</p>
                 <p className='itemCuote'>Cantidad:({available_quantity} disponibles)</p>
-
+                </div>
+                <div>
                 <button className='buy Button' onClick={() => this.clickBuy(title,price)} >Comprar ahora</button>
                 <button onClick={() => this.Click(title, price, poc)} className='cart Button'>Agregar al carrito</button>
+                </div>
               </div>
             </div>
 

@@ -67,10 +67,29 @@
        flex-direction: column-reverse;
 
       }
+    .imgRes {  
+
+     text-align: center;
+     
+     .minRes {
+        width: 90%;
+        max-width: 300px;
+     }
+
+      @media screen and (min-width:800px) {
+
+        display: none;
+        
+       }
+
+       
+
+    }
+   
 
     .itemInf {
 
-        max-height: 500px;
+        
         width: 30%;
         padding: 24px 16px;
         border: 1px solid #eaeaea;
@@ -81,7 +100,8 @@
 
     @media screen and (max-width:768px) {
          width: 100%;
-         border:none
+         border:none;
+       
      
            }
     
@@ -91,9 +111,16 @@
         margin-bottom: 60px;
         max-height: 502px;
         display: flex;
-      
+
+    @media screen and (max-width:768px) {
+            display: none;
+        
+              }
+              
     
-     .ulPic {
+      
+              
+    .ulPic {
         padding: 0;
         flex-direction: column;
         display: flex;
