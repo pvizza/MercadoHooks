@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Total from '../Total'
+
 
 function Item(props) {
     const {title, price} = props

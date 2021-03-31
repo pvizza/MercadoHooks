@@ -15,16 +15,6 @@ function Cart() {
 
 
  useEffect(() => { 
-
-  // const arr = Object.keys(localStorage)
-  
-  // const iterateArray = (arr) => {
-  //   for(let i=0; i<=arr.length-1; i++)  {
-  //   console.log(arr[i]);
-  //   }
-  // }
-
-  // const cart = iterateArray(arr)
   
   const stringifiedProducts = localStorage.getItem('cart')
   const products = JSON.parse(stringifiedProducts) 
@@ -64,9 +54,12 @@ function handleCallback(r,price) {
 <div className='cart'>
 <div className='lineCart'> </div>
 
+
+
+
 {products && products.map((pro,key) => {
   return (
-  
+    
     <div className='itemCart' key={key}>
       
     {pro.poc.map((i,key) => {
