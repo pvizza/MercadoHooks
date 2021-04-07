@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/MercadoHooks/static/css/main.abb1b1cd.chunk.css",
-    "main.js": "/MercadoHooks/static/js/main.c6161a0d.chunk.js",
-    "main.js.map": "/MercadoHooks/static/js/main.c6161a0d.chunk.js.map",
+    "main.css": "/MercadoHooks/static/css/main.cd96624d.chunk.css",
+    "main.js": "/MercadoHooks/static/js/main.2682bb07.chunk.js",
+    "main.js.map": "/MercadoHooks/static/js/main.2682bb07.chunk.js.map",
     "runtime-main.js": "/MercadoHooks/static/js/runtime-main.9f22c9c9.js",
     "runtime-main.js.map": "/MercadoHooks/static/js/runtime-main.9f22c9c9.js.map",
-    "static/js/2.c1b5e234.chunk.js": "/MercadoHooks/static/js/2.c1b5e234.chunk.js",
-    "static/js/2.c1b5e234.chunk.js.map": "/MercadoHooks/static/js/2.c1b5e234.chunk.js.map",
+    "static/js/2.7f8ca46e.chunk.js": "/MercadoHooks/static/js/2.7f8ca46e.chunk.js",
+    "static/js/2.7f8ca46e.chunk.js.map": "/MercadoHooks/static/js/2.7f8ca46e.chunk.js.map",
     "index.html": "/MercadoHooks/index.html",
-    "precache-manifest.2d0888c79cd2cabe968763438b88eba0.js": "/MercadoHooks/precache-manifest.2d0888c79cd2cabe968763438b88eba0.js",
+    "precache-manifest.b3c3fb1167e5af432d383024ed30fcbc.js": "/MercadoHooks/precache-manifest.b3c3fb1167e5af432d383024ed30fcbc.js",
     "service-worker.js": "/MercadoHooks/service-worker.js",
-    "static/css/main.abb1b1cd.chunk.css.map": "/MercadoHooks/static/css/main.abb1b1cd.chunk.css.map",
-    "static/js/2.c1b5e234.chunk.js.LICENSE.txt": "/MercadoHooks/static/js/2.c1b5e234.chunk.js.LICENSE.txt"
+    "static/css/main.cd96624d.chunk.css.map": "/MercadoHooks/static/css/main.cd96624d.chunk.css.map",
+    "static/js/2.7f8ca46e.chunk.js.LICENSE.txt": "/MercadoHooks/static/js/2.7f8ca46e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9f22c9c9.js",
-    "static/js/2.c1b5e234.chunk.js",
-    "static/css/main.abb1b1cd.chunk.css",
-    "static/js/main.c6161a0d.chunk.js"
+    "static/js/2.7f8ca46e.chunk.js",
+    "static/css/main.cd96624d.chunk.css",
+    "static/js/main.2682bb07.chunk.js"
   ]
 }
