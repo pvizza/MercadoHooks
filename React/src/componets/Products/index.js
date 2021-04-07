@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import './style.scss'
 import {Link} from 'react-router-dom'
-import Product from '../../pages/Product'
+
 
 
 function Products (props) {
@@ -25,7 +25,7 @@ function Products (props) {
            
           </div>
           <div className="itemImg">
-          <img src={img}/>
+          <img alt="product" src={img}/>
           </div>
           </div>
 

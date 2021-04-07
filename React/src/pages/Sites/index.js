@@ -9,7 +9,7 @@ function Sites() {
   const [items , setItems] = useState([]);
   const {site} = useParams();
   const [inputValue, setInputValue] = useState("")
-  const [modal, setModal] = useState(false)
+  // const [modal, setModal] = useState(false)
   const [search, setSearch] = useState("")
   const [loading, setLoading] = useState(false)
   

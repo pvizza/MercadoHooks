@@ -25,8 +25,9 @@ function Cart() {
 
   let total = 0
   products && products.map((product) => {
+    return (
     total = total + product.price
-    
+    )
   } )
   setTotal( total )
 
@@ -34,7 +35,7 @@ function Cart() {
 
 function handleCallback(r,price) {
   
-  const result = r == 'less' ? total - price : total + price
+  const result = r === 'less' ? total - price : total + price
 
   setTotal(result)
 
@@ -66,7 +67,7 @@ function handleCallback(r,price) {
       return (
         <>
         
-        <img className='imgCart' key={key} src={i.url}/>
+        <img key={key} alt="product" className='imgCart'  src={i.url}/>
  
         </>
       )
@@ -82,7 +83,7 @@ function handleCallback(r,price) {
   )
 })}
 
-<Total total={total} />
+<Total total={Math.round(total)} />
 
 <div className='cartBuy'>
 

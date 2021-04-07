@@ -7,7 +7,7 @@ function Item(props) {
 
    
     function handleClick(r) {
-        const result = r == 'less' ? qty - 1 : qty + 1
+        const result = r === 'less' ? qty - 1 : qty + 1
         
         if (result >= 1) {
          props.handleCallback(r,price)
@@ -32,7 +32,7 @@ function Item(props) {
 <button className='cartButton' onClick={() => handleClick('more')}>+</button>
 </div>
 <div className='cartPrice'>
-    <span className='totalPrice'>${price * qty}</span>
+    <span className='totalPrice'>${Math.round(price * qty)}</span>
     </div>
 
 

@@ -9,7 +9,7 @@ function Home(){
       <>
       <div className='wrapper'>
 
-      <div className='imgContent'> <img src='https://static.mlstatic.com/org-img/homesnw/img/ml-logo-small.png?v=3.0'/>
+      <div className='imgContent'> <img alt="link page" src='https://static.mlstatic.com/org-img/homesnw/img/ml-logo-small.png?v=3.0'/>
       </div>
       <div className='map'>
           {sites.map((site, key) => {

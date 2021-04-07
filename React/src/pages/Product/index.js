@@ -67,10 +67,11 @@ class Product extends React.Component {
 
     try {
       
-      const ax = await axios({
+          await axios({
         method:"POST",
         headers:{
           'Content-type': 'application/json', 
+          "Access-Control-Allow-Origin" : "*"
         },
         url:"http://localhost:4000/checkout",
   
@@ -132,7 +133,7 @@ class Product extends React.Component {
   
     handleButton() {
 
-      const {inputValue} = this.state
+      
     
     
       
@@ -167,7 +168,8 @@ class Product extends React.Component {
 
                       <div key={key} onMouseOver={() => this.handleOver()} className='gpic'>
 
-                        {<img className='pic' src={pic.url} />}
+                    
+                        {<img alt="product" className='pic' src={pic.url} />}
 
                       </div>
 
@@ -185,7 +187,7 @@ class Product extends React.Component {
 
                       <>
                     <div key={key}>
-                     {<img className='maxPic'  src={pic.url} />}
+                     {<img alt="miniature" className='maxPic'  src={pic.url} />}
                      </div>   
                       </>
 
@@ -205,7 +207,7 @@ class Product extends React.Component {
                 <p className='itemTitle'>{title}</p>
                 {poc.map((pic,key)=> {
                   return ( <div key={key} className='imgRes'>
-                  <img className="minRes" src={pic.url} />
+                  <img alt="pic" className="minRes" src={pic.url} />
                                 </div>
                   )
                 })}
