@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/MercadoHooks/precache-manifest.1e9189bcb8d60b1f71035b64c361a3fa.js"
+  "/MercadoHooks/precache-manifest.2d0888c79cd2cabe968763438b88eba0.js"
 );
 
 self.addEventListener('message', (event) => {

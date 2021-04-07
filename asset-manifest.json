@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/MercadoHooks/static/css/main.f76cb2e8.chunk.css",
-    "main.js": "/MercadoHooks/static/js/main.9ff587f0.chunk.js",
-    "main.js.map": "/MercadoHooks/static/js/main.9ff587f0.chunk.js.map",
+    "main.css": "/MercadoHooks/static/css/main.abb1b1cd.chunk.css",
+    "main.js": "/MercadoHooks/static/js/main.c6161a0d.chunk.js",
+    "main.js.map": "/MercadoHooks/static/js/main.c6161a0d.chunk.js.map",
     "runtime-main.js": "/MercadoHooks/static/js/runtime-main.9f22c9c9.js",
     "runtime-main.js.map": "/MercadoHooks/static/js/runtime-main.9f22c9c9.js.map",
     "static/js/2.c1b5e234.chunk.js": "/MercadoHooks/static/js/2.c1b5e234.chunk.js",
     "static/js/2.c1b5e234.chunk.js.map": "/MercadoHooks/static/js/2.c1b5e234.chunk.js.map",
     "index.html": "/MercadoHooks/index.html",
-    "precache-manifest.1e9189bcb8d60b1f71035b64c361a3fa.js": "/MercadoHooks/precache-manifest.1e9189bcb8d60b1f71035b64c361a3fa.js",
+    "precache-manifest.2d0888c79cd2cabe968763438b88eba0.js": "/MercadoHooks/precache-manifest.2d0888c79cd2cabe968763438b88eba0.js",
     "service-worker.js": "/MercadoHooks/service-worker.js",
-    "static/css/main.f76cb2e8.chunk.css.map": "/MercadoHooks/static/css/main.f76cb2e8.chunk.css.map",
+    "static/css/main.abb1b1cd.chunk.css.map": "/MercadoHooks/static/css/main.abb1b1cd.chunk.css.map",
     "static/js/2.c1b5e234.chunk.js.LICENSE.txt": "/MercadoHooks/static/js/2.c1b5e234.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9f22c9c9.js",
     "static/js/2.c1b5e234.chunk.js",
-    "static/css/main.f76cb2e8.chunk.css",
-    "static/js/main.9ff587f0.chunk.js"
+    "static/css/main.abb1b1cd.chunk.css",
+    "static/js/main.c6161a0d.chunk.js"
   ]
 }
