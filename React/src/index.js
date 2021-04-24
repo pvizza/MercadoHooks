@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import Sites from './pages/Sites'
 import Product from './pages/Product'
 import Cart from './pages/Cart'
+import CreateAccount from './pages/CreateAccount'
+import Login from './pages/Login'
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router,Route} from 'react-router-dom';
 
@@ -17,6 +19,8 @@ ReactDOM.render(
     <Route exact path='/Sites/:site' component={Sites} />
     <Route exact path='/product/:id' component={Product} />
     <Route exact path='/cart/' component={Cart} />
+    <Route exact path='/login/' component={Login}/>
+    <Route exact path='/create/' component={CreateAccount}/>
     
   </Router>,
   document.getElementById('root')

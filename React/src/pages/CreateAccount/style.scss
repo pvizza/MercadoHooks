@@ -1,0 +1,76 @@
+.mainLogin.cr {
+    align-items: center;
+    flex-direction: column;
+
+ .titleData {
+     font-weight: 400;
+     }   
+
+ .createUser {
+
+    width:60%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width:1024px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+      height: 800px;
+    }
+
+  .inputsWrapper {  
+
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    @media screen and (max-width:1024px) {
+      padding:0px;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+
+    .inputLogin {
+        width: 300px;
+        font-size: 15px;
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: #adadc3;
+        transition: all 0.5s ease-out;
+        display: block;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        margin-right: 20px;
+
+        @media screen and (max-width:1024px) {
+          margin-right: 0px;
+        }
+    }
+
+    
+    .inputLogin:hover {
+        border-color: #3483fa;
+    }
+  }
+  .continue {
+      width: 50%;
+      margin: 0 auto
+  }
+  .errorLogin {
+    text-align: center;
+    background-color: yellow;
+    font-size: 20px;
+    margin-top: 45px;
+  }
+}
+
+}
+
+
+

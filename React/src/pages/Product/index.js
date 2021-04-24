@@ -67,21 +67,23 @@ class Product extends React.Component {
 
     try {
       
-          await axios({
+      await axios({
         method:"POST",
         headers:{
           'Content-type': 'application/json', 
           "Access-Control-Allow-Origin" : "*"
         },
         url:"http://localhost:4000/checkout",
-  
+        
         data: {
           title:title,
           price:price,
           quantity: 1
-        }
+        },
+        
         
       });
+      window.location.href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=22115028-e627c589-3404-472a-9171-e315d7e0476f"
     } catch(err) {
       console.log(err)
       
@@ -213,7 +215,7 @@ class Product extends React.Component {
                 })}
                 </div>
               <div>
-                <p className='itemPrice'>$  {price}</p>
+                <p className='itemPrice'>$  {Math.round(price)}</p>
                 <p className='itemCuote'>Paga hasta en 12 cuotas de ${Math.round(price / 12)}</p>
                 {price <= 3499 ? <p> Costo de envio </p> : <p className='itemSend'>Envio gratis</p>}
                 <p className='itemCuote' >stock disponible</p>

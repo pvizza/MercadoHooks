@@ -2,16 +2,23 @@
 .inputWrapper {
 
   background-color: yellow;
+  height: 90px;
 
+  @media screen and (max-width:750px) {
+   display: flex;
+   align-items: center;
+   height: 75px;
+  }
 
 .inputNav {
   margin: 0px auto;
   width: 50%;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding-top: 1rem;
   @media screen and (max-width:750px) {
-    width: 100%;
+    width: 70%;
+    padding: 0px;
   }
   @media screen and (min-width:750px) and (max-width:900px) {
     width: 80%;
@@ -22,7 +29,7 @@
   }
 .svgIcon {
 
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px;
   background-color: white;
   color:#666;
@@ -31,6 +38,7 @@
   border-color: #eaeaea;
 
 }
+
 
   .search {
 
@@ -64,5 +72,29 @@
 }
 
 }
+
+.login {
+  text-align: end;
+  padding-right: 10px;
+  margin-top: -10px;
+
+  @media screen and (max-width:750px) {
+    margin: 0px;
+  } 
+
+ .logout {
+
+  background: none;
+  border: 0;
+  color: inherit;
+  font-size: 15px;
+  cursor: pointer
+
+ }
+ .cart {
+   font-size: 15px;
+ } 
+}
+
 
 }
