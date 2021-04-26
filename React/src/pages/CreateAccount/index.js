@@ -33,7 +33,7 @@ export default function Create() {
           setValidate(true)
 
     try {
-   const res = await axios.post('http://localhost:4000/users/create',data)
+   const res = await axios.post('https://mercadohooksapi.herokuapp.com/create',data)
         if (res.status === 200) { 
         setLogin(true)
         }
