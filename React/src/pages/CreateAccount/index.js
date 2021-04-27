@@ -3,6 +3,7 @@ import './style.scss';
 import axios from 'axios'
 import {useValidate} from '../../CustomHooks/useValidate'
 import Button from '../../componets/button/index'
+import { Redirect } from 'react-router-dom';
 
 export default function Create() {
     const [data, setData] = useState({});
@@ -55,9 +56,6 @@ export default function Create() {
         
     }
 
-    if(login) {
-        setTimeout(() => window.location.href="/login", 2000)
-    }
 
     function handleChange(e) {
         const {name,value} = e.target;
@@ -91,8 +89,10 @@ export default function Create() {
             <div className='errorLogin'>
             {error && (
                 <p>{`Te falto completar los campos : ${isValid}`}</p>)} 
-            { validate && <p>Te registraste correctamente</p> }  
+            { validate && <p>Te registraste correctamente</p> } 
+             
                </div>
+               {login && <Redirect to='/login'/> }
                 </div>
                 
             </div>
