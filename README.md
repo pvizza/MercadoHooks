@@ -9,3 +9,6 @@ Tambien hago uso de localstorage para enviar los productos selecionados al carri
 La api esta deployada en heroku y la base de datos en Mongo Atlas.
 
 Tecnologías y librerías utilizadas para el proyecto: Hooks | React-Router-Dom | Express | MongoDB | Passport | Bcrypt
+
+Front-end: https://pvizza.github.io/MercadoHooks
+Api: https://mercadohooksapi.herokuapp.com/
