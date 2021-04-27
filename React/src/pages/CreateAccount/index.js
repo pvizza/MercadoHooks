@@ -14,6 +14,8 @@ export default function Create() {
     const fields = ["nombre","apellido","email","clave"]
     const isValid = useValidate(data,fields,validate);
 
+    const url = 'https://mercadohooksapi.herokuapp.com/create'
+
     useEffect(() => {
 
         if (isValid) {
@@ -33,7 +35,16 @@ export default function Create() {
           setValidate(true)
 
     try {
-   const res = await axios.post('https://mercadohooksapi.herokuapp.com/create',data)
+
+   const res = await axios({
+        method : "POST",
+        headers:{
+            'Content-type': 'application/json',
+            'Access-Control-Allow-Origin': "*"
+        },
+        url: url,
+        data : data 
+   })
         if (res.status === 200) { 
         setLogin(true)
         }
