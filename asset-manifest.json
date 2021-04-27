@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MercadoHooks/static/css/main.97d5f554.chunk.css",
-    "main.js": "/MercadoHooks/static/js/main.f4c4de2b.chunk.js",
-    "main.js.map": "/MercadoHooks/static/js/main.f4c4de2b.chunk.js.map",
+    "main.js": "/MercadoHooks/static/js/main.4097a9d2.chunk.js",
+    "main.js.map": "/MercadoHooks/static/js/main.4097a9d2.chunk.js.map",
     "runtime-main.js": "/MercadoHooks/static/js/runtime-main.9f22c9c9.js",
     "runtime-main.js.map": "/MercadoHooks/static/js/runtime-main.9f22c9c9.js.map",
     "static/js/2.329fe14a.chunk.js": "/MercadoHooks/static/js/2.329fe14a.chunk.js",
     "static/js/2.329fe14a.chunk.js.map": "/MercadoHooks/static/js/2.329fe14a.chunk.js.map",
     "index.html": "/MercadoHooks/index.html",
-    "precache-manifest.60a9cab5a76aed47f6a716cd985c65a1.js": "/MercadoHooks/precache-manifest.60a9cab5a76aed47f6a716cd985c65a1.js",
+    "precache-manifest.88c85e13a32e13e7d64aa8ffe885e9d4.js": "/MercadoHooks/precache-manifest.88c85e13a32e13e7d64aa8ffe885e9d4.js",
     "service-worker.js": "/MercadoHooks/service-worker.js",
     "static/css/main.97d5f554.chunk.css.map": "/MercadoHooks/static/css/main.97d5f554.chunk.css.map",
     "static/js/2.329fe14a.chunk.js.LICENSE.txt": "/MercadoHooks/static/js/2.329fe14a.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9f22c9c9.js",
     "static/js/2.329fe14a.chunk.js",
     "static/css/main.97d5f554.chunk.css",
-    "static/js/main.f4c4de2b.chunk.js"
+    "static/js/main.4097a9d2.chunk.js"
   ]
 }
