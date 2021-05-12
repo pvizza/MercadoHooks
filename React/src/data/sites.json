@@ -1,32 +1,23 @@
 [
-{
-
-  "name":"🇦🇷 Argentina",
-  "location":"MLA" 
-  
- },
- {
- 
-   "name":"🇧🇷 Brasil",
-   "location":"MLB" 
-  
+  {
+    "name": "🇦🇷 Argentina",
+    "location": "MLA"
   },
   {
- 
-   "name":"🇵🇾 Paraguay",
-   "location":"MPY" 
-  
+    "name": "🇧🇷 Brasil",
+    "location": "MLB"
   },
   {
- 
-   "name":"🇺🇾 Uruguay",
-   "location":"MLU" 
-  
+    "name": "🇵🇾 Paraguay",
+    "location": "MPY"
+  },
+  {
+    "name": "🇺🇾 Uruguay",
+    "location": "MLU"
   },
 
   {
     "name": "🇧🇴 Bolivia",
     "location": "MBO"
   }
- 
- ]
+]
