@@ -24,7 +24,7 @@ function Sites() {
     }
 
     fetchData();
-  }, [inputValue, search, site]);
+  }, [search]);
 
   function handleCallback(call) {
     setInputValue(call);
