@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bbc3f7593761da282b4233983f614e56",
+    "revision": "7d01cff6725f8c3f57f714b1f1a08878",
     "url": "/MercadoHooks/index.html"
   },
   {
-    "revision": "189d225910fc63ed305a",
+    "revision": "68433deaa41774497806",
     "url": "/MercadoHooks/static/css/main.97d5f554.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MercadoHooks/static/js/2.2b149f4c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "189d225910fc63ed305a",
-    "url": "/MercadoHooks/static/js/main.95b7aba4.chunk.js"
+    "revision": "68433deaa41774497806",
+    "url": "/MercadoHooks/static/js/main.99aab831.chunk.js"
   },
   {
     "revision": "ae8686fb9cfff38abc43",
