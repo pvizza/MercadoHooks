@@ -10,7 +10,7 @@ export default function Login(props) {
   const [error, setError] = useState("");
   const [login, setLogin] = useState(null);
 
-  const endpoint = "https://mercadohooksapi.herokuapp.com/login";
+  const endpoint = "http://localhost:3001/login";
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -63,7 +63,7 @@ export default function Login(props) {
                     <input
                       className="inputLogin"
                       placeholder="E-mail"
-                      name="nombre"
+                      name="email"
                       onChange={handleChange}
                     />
                     <input
