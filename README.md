@@ -1,4 +1,6 @@
 # MercadoHooks
+Demo: https://pvizza.github.io/MercadoHooks
+Api: https://mercadohooksapi.herokuapp.com/
 
 MercadoHooks es un proyecto basado en el market place www.mercadolibre.com, el usuario puede elegir el pais donde quiere buscar un producto publicado y hacer
 una request a la api para traer toda la informacion del mismo.
@@ -10,4 +12,4 @@ La api esta deployada en heroku y la base de datos en Mongo Atlas.
 
 Tecnologías y librerías utilizadas para el proyecto: Hooks | React-Router-Dom | Express | MongoDB | Passport | Bcrypt
 
-Front-end: https://pvizza.github.io/MercadoHooks Api: https://mercadohooksapi.herokuapp.com/
+ 
